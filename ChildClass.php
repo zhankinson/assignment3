@@ -16,6 +16,30 @@
 			$this->song = $song;
 		}
 
+		public function getName() {
+			return $this->name;
+		}
+
+		public function setName($newName) {
+			$this->name = $newName;
+		}
+
+		public function getAlias() {
+			return $this->alias;
+		}
+
+		public function setAlias($newAlias) {
+			$this->alias = $newAlias;
+		}
+
+		public function getAge() {
+			return $this->age;
+		}
+
+		public function setAge($newAge) {
+			$this->age = $newAge;
+		}
+
 		public function getAlbum() {
 			return $this->album;
 		}
@@ -25,7 +49,7 @@
 		}
 
 		public function getSong() {
-			retrn $this->song;
+			return $this->song;
 		}
 
 		public function setSong($newSong) {
@@ -34,6 +58,7 @@
 
 		public function __toString() {
 			$artinfo = $this->getName() . " is a musician known as " . $this->getAlias() . " and is " . $this->getAge() . "years old. <br>";
-			$musinfo = $this->getAlias() . " wrote a song called " . $this->getSong() . " which is on his/her album " . $this->getAlbum() . ". <br>";
+			$musinfo = $this->getAlias() . " wrote a song called " . $this->getSong() . " which is on the album " . $this->getAlbum() . ". <br>";
+			return $artinfo . $musinfo;
 		}
 	}
