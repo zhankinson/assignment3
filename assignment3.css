@@ -1,1 +1,18 @@
-/*styles for assignment 3*/
+body {
+  background-color: black;
+  font-family: "Lucida Grande", sans-serif;
+  color: white;
+}
+
+img {
+  width: 50%;
+  background-color: black;
+}
+
+h1 {
+  color: red;
+}
+
+.main {
+  text-align: center;
+}
