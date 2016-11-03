@@ -25,7 +25,7 @@
 		}
 
 		public function __toString() {
-			$artinfo = $this->getName() . " is an artist known as" . $this->getAlias() . " who likes to " . $this->getStyle();
+			$artinfo = $this->getName() . " is an artist known as " . $this->getAlias() . " who likes to " . $this->getStyle() . "<br>";
 			return $artinfo;
 		}
 	}
